@@ -41,3 +41,16 @@ export interface LoginRequest {
     email: string;
     password: string;
 }
+
+export interface PaymentDetails {
+    amount: number;
+    currency: string;
+    description: string;
+    customerId: string;
+}
+
+export interface PaymentResponse {
+    success: boolean;
+    transactionId: string;
+    message: string;
+}
