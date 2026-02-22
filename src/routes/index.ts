@@ -89,5 +89,5 @@ router.post('/webhooks/shopify', shopifyController.webhook.bind(shopifyControlle
 export default router;
 
 export function setupRoutes(app: Express) {
-    app.use(router);
+    app.use('/api', router);
 }
